@@ -2,7 +2,7 @@
   <div>
     <HeaderComponent />
     <MainComponent />
-
+    ciao
   </div>
 </template>
 
