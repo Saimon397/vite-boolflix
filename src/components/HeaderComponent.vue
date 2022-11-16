@@ -1,7 +1,7 @@
 <template>
   <nav class="navbar navbar-expand-lg bg-gradient sticky-top">
     <div class="container-fluid">
-      <img class="logo" src="../../public/img/BOOLFLIX.png" alt="logo-png">
+      <img class="logo" src="/img/BOOLFLIX.png" alt="logo-png">
       <div class="collapse navbar-collapse w-100" id="navbarNavAltMarkup">
         <div class="navbar-nav ms-5">
           <a class="nav-link" href="#nogo">Home</a>
@@ -16,7 +16,7 @@
         <input class="form-control bg-dark me-3 border-dark w-50" type="search" placeholder="Search"
           aria-label="Search">
         <button class="btn text-white border-dark btn-dark btn-outline-secondary" type="submit"><img class="logo2"
-            src="../../public/img/Netflix-Logo.wine.svg" alt=""></button>
+            src="/img/Netflix-Logo.wine.svg" alt=""></button>
       </form>
     </div>
   </nav>
@@ -45,7 +45,7 @@ button {
 }
 
 a {
-  font-size: 1.2em;
+  font-size: 1em;
   color: $coltext;
 
   &:hover {

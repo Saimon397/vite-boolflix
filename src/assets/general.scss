@@ -2,11 +2,13 @@
 @import '@fortawesome/fontawesome-free/scss/fontawesome.scss';
 @import '@fortawesome/fontawesome-free/scss/solid.scss';
 @import 'bootstrap/scss/bootstrap';
+@import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
 
 * {
     padding: 0%;
     margin: 0%;
     box-sizing: border-box;
+    font-family: 'Syne Mono', monospace;
 }
 
 body {
