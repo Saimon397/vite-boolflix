@@ -3,7 +3,7 @@
     <div v-show="list.length" class="TitleOne px-5">{{ CatTitle }}</div>
   </Transition>
   <div class="scroll d-flex align-items-center py-3">
-    <TransitionGroup name="list">
+    <TransitionGroup name="transition">
       <CardComponent v-for="(item, index) in list" :key="index" :card="item" />
     </TransitionGroup>
   </div>
