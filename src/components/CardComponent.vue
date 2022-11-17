@@ -6,8 +6,8 @@
         </div>
         <div class="info-cont px-3 position-absolute w-100 d-flex align-content-center align-items-center gap-4">
             <div class="col-4">
-                <p class="text-white text-uppercase" v-html="(!!card.title) ? card.title : card.name"></p>
-                <p class="info" v-html="(!!card.original_title) ? card.original_title : card.original_name"></p>
+                <p class="info text-white text-uppercase" v-html="(!!card.title) ? card.title : card.name"></p>
+                <p class="info1" v-html="(!!card.original_title) ? card.original_title : card.original_name"></p>
             </div>
             <div class="col-5 flex-grow-1 py-1 overflow-auto h-75">
                 <p class="info2">{{ card.overview }}</p>
@@ -60,19 +60,20 @@ export default {
     left: 0;
     height: 100px;
 
-    p {
+    .info {
+        font-weight: bold;
         font-size: 1.2em;
         margin-bottom: 0;
     }
 
-    .info {
+    .info1 {
         font-size: 0.7em;
         color: white;
     }
 
     .info2 {
         color: white;
-        font-size: 12px;
+        font-size: 0.7em;
     }
 }
 
