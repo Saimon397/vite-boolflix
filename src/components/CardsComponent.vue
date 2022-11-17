@@ -25,7 +25,7 @@ export default {
   },
 
   components: {
-    CardComponent
+    CardComponent,
   },
 
   watch: {
@@ -48,9 +48,9 @@ export default {
   computed: {
     CatTitle() {
       if (this.end.includes('tv')) {
-        return 'TV SHOW...'
+        return '📺 TV SHOW...'
       } else if (this.end.includes('movie')) {
-        return 'MOVIE...'
+        return '🎥 MOVIE...'
       }
     }
   }
