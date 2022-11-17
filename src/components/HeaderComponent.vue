@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar navbar-expand-lg bg-gradient sticky-top">
+  <nav class="navbar navbar-expand-lg bg-gradient text-uppercase">
     <div class="container-fluid">
       <img class="logo" src="/img/BOOLFLIX.png" alt="logo-png">
       <div class="collapse navbar-collapse w-100" id="navbarNavAltMarkup">
@@ -13,18 +13,26 @@
         </div>
       </div>
       <form class="d-flex justify-content-end" role="search">
-        <input class="form-control bg-dark me-3 border-dark w-50" type="search" placeholder="Search"
-          aria-label="Search">
+        <div><i class="fa-solid fa-magnifying-glass fs-1 mt-1 me-4 text-dark"></i></div>
+        <input class="form-control bg-dark me-3 border-dark w-50 text-white" type="search" placeholder="Search..."
+          v-model="store.options.params.query" @keyup.enter="store.clicker = !store.clicker" aria-label="Search">
         <button class="btn text-white border-dark btn-dark btn-outline-secondary" type="submit"><img class="logo2"
-            src="/img/Netflix-Logo.wine.svg" alt=""></button>
+            src="/img/Netflix-Logo.wine.svg" alt="logo-ntx" @click="store.clicker = !store.clicker"></button>
       </form>
     </div>
   </nav>
 </template>
 
 <script>
+
+import { store } from '../data/store';
 export default {
-  name: 'HeaderComponent'
+  name: 'HeaderComponent',
+  data() {
+    return {
+      store
+    }
+  }
 }
 </script>
 

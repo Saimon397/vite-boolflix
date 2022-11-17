@@ -1,12 +1,21 @@
 <template>
   <div>
-
+    <CardsComponent v-for="(el, i) in list_end" :key="i" :end="el" />
   </div>
 </template>
 
 <script>
-export default {
+import CardsComponent from '../components/CardsComponent.vue'
 
+export default {
+  data() {
+    return {
+      list_end: ['/search/movie', '/search/tv']
+    }
+  },
+  components: {
+    CardsComponent,
+  }
 }
 </script>
 

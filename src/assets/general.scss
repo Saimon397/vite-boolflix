@@ -1,16 +1,26 @@
 @use './partials/variables' as*;
-@import '@fortawesome/fontawesome-free/scss/fontawesome.scss';
-@import '@fortawesome/fontawesome-free/scss/solid.scss';
 @import 'bootstrap/scss/bootstrap';
-@import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
+$fa-font-path : "./webfonts";
+@import '/node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss';
+@import '/node_modules/@fortawesome/fontawesome-free/scss/brands.scss';
+@import '/node_modules/@fortawesome/fontawesome-free/scss/regular.scss';
+@import '/node_modules/@fortawesome/fontawesome-free/scss/solid.scss';
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@400;900&display=swap');
 
 * {
     padding: 0%;
     margin: 0%;
     box-sizing: border-box;
-    font-family: 'Syne Mono', monospace;
+    font-family: 'Exo 2', sans-serif;
 }
 
 body {
     background: linear-gradient(90deg, rgba(27, 27, 27, 1) 45%, rgba(228, 19, 26, 1) 100%);
+}
+
+::-webkit-scrollbar {
+    display: none;
+    width: 10px;
+    height: 10px;
+    overflow: overlay
 }
