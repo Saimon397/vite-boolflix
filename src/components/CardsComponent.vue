@@ -2,7 +2,7 @@
   <Transition name="transitiontitle">
     <div v-show="list.length" class="TitleOne px-5">{{ CatTitle }}</div>
   </Transition>
-  <div class="scroll d-flex align-items-center py-3">
+  <div class="container-fluid scroll d-flex align-items-center py-2">
     <TransitionGroup name="transition">
       <CardComponent v-for="(item, index) in list" :key="index" :card="item" />
     </TransitionGroup>
