@@ -1,4 +1,4 @@
-<template>"
+<template>
     <div class="cardd px-3 position-relative col-4 mt-3" @mouseover="hover = true" @mouseleave="hover = false">
         <div class=" card-container">
             <Transition name="transition2">
