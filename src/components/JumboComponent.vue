@@ -1,8 +1,7 @@
 <template>
     <div>
-        <video class="video-bg"
-            src="../../public/video/SnapSave.io-Our Universe _ Trailer Ufficiale _ Netflix Italia-(1080p).mp4" autoplay
-            muted loop></video>
+        <video class="video-bg" src="/video/SnapSave.io-Our Universe _ Trailer Ufficiale _ Netflix Italia-(1080p).mp4"
+            autoplay muted loop></video>
     </div>
 </template>
 
