@@ -1,13 +1,7 @@
 <template>
-    <div class="profile container-fluid">
-        <h1>Who wants to watch Boolflix ?</h1>
-        <img :src="user" :alt="user" @click="select()">
-        <select name="profile-pic" id="pic" v-model="user">
-            <option v-for="(account, index) in store.accountsPic" :key="index" :value="account">Account: {{
-                    index
-            }}
-            </option>
-        </select>
+    <h1>Who wants to watch Boolflix ?</h1>
+    <div class="profile d-flex container-fluid justify-content-center align-items-center">
+        <img v-for="(el, i) in store.accountsPic" :key="i" :src="el" :alt="el" @click="select(el)">
     </div>
 </template>
 
@@ -22,8 +16,8 @@ export default {
         }
     },
     methods: {
-        select() {
-            store.account = this.user;
+        select(el) {
+            store.account = el;
             store.display = true;
         }
     },
@@ -34,16 +28,16 @@ export default {
 @use '../assets/partials/mixins' as *;
 @use '../assets/partials/variables' as *;
 
-.profile {
-    @include flexcol;
-    align-items: center;
+h1 {
     margin-top: 15rem;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 2px 2px black;
+    color: $coltext;
+}
 
-    h1 {
-        text-transform: uppercase;
-        text-shadow: 2px 2px black;
-        color: $coltext;
-    }
+.profile {
+    margin-top: 3rem;
 
     img {
         width: 100px;
