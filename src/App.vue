@@ -2,7 +2,8 @@
   <header class="sticky-top">
     <HeaderComponent />
   </header>
-  <main class="mt-5">
+  <main>
+    <JumboComponent />
     <MainComponent />
   </main>
 </template>
@@ -10,6 +11,7 @@
 <script>
 import HeaderComponent from './components/HeaderComponent.vue';
 import MainComponent from './components/MainComponent.vue';
+import JumboComponent from './components/JumboComponent.vue';
 import { store } from './data/store';
 
 export default {
@@ -18,7 +20,7 @@ export default {
       store,
     }
   },
-  components: { HeaderComponent, MainComponent }
+  components: { HeaderComponent, MainComponent, JumboComponent }
 }
 </script>
 

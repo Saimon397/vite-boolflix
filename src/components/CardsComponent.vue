@@ -1,6 +1,6 @@
 <template>
   <Transition name="transitiontitle">
-    <div v-show="list.length" class="TitleOne px-5">{{ CatTitle }}</div>
+    <div v-show="list.length" class="TitleOne px-4">{{ CatTitle }}</div>
   </Transition>
   <div class="container-fluid scroll d-flex align-items-center py-2">
     <TransitionGroup name="transition">

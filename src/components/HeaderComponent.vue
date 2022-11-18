@@ -45,6 +45,10 @@ export default {
 @use '../assets/partials/mixins' as *;
 @use '../assets/partials/variables' as *;
 
+.nav {
+  z-index: 1000
+}
+
 .logo {
   width: 13%;
 }
