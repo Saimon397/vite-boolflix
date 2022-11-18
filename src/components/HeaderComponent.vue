@@ -13,7 +13,7 @@
         </div>
       </div>
       <form class="d-flex justify-content-end" role="search">
-        <div><i class="fa-solid fa-magnifying-glass fs-1 mt-1 me-4 text-dark"></i></div>
+        <img class="pic" :src="store.account" alt="account" v-show="store.display">
         <input class="form-control bg-dark me-3 border-dark w-50 text-white" type="search" placeholder="Search..."
           v-model="research" @keyup.enter="search" aria-label="Search">
         <button class="btn text-white border-dark btn-dark btn-outline-secondary" type="submit"><img class="logo2"
@@ -51,6 +51,12 @@ export default {
 
 .logo {
   width: 13%;
+}
+
+.pic {
+  max-height: 3rem;
+  border-radius: .3rem;
+  margin-right: 2rem;
 }
 
 .logo2 {

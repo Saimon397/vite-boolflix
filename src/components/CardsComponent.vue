@@ -75,6 +75,7 @@ export default {
   font-weight: bold;
   font-size: 50px;
   color: $coltext;
+  text-shadow: 2px 2px black;
 }
 
 .scroll {
