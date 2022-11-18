@@ -29,7 +29,7 @@ export default {
   },
 
   watch: {
-    'store.clicker'() {
+    'store.options.params.query'() {
       this.getApi()
     }
   },
@@ -48,11 +48,21 @@ export default {
   computed: {
     CatTitle() {
       if (this.end.includes('tv')) {
-        return '📺 TV SHOW...'
-      } else if (this.end.includes('movie')) {
-        return '🎥 MOVIE...'
+        if (this.end.includes('trending')) {
+          return '🎬 TREND TV SHOW...'
+        }
+        return '📺 TV SHOW...';
+      }
+      else if (this.end.includes('movie')) {
+        if (this.end.includes('trending')) {
+          return '📼 TREND MOVIE...'
+        }
+        return '🎥 MOVIE...';
       }
     }
+  },
+  mounted() {
+    this.getApi();
   }
 }
 </script>
@@ -71,7 +81,7 @@ export default {
   margin-bottom: 50px;
   height: 300px;
   overflow: auto;
-  display: flex;
+  overflow-y: hidden;
 }
 
 .transition-enter-active,

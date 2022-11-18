@@ -2,6 +2,9 @@ import { reactive } from "vue";
 
 export const store = reactive({
     apiUrl: 'https://api.themoviedb.org/3',
+    imgUrl: 'https://image.tmdb.org/t/p/w300/',
+    genresUrl: 'https://api.themoviedb.org/3/genre/movie/list',
+    listGenres: [],
     Movie: [],
     TvShow: [],
 

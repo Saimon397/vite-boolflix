@@ -129,7 +129,7 @@ export default {
     z-index: 1000;
     bottom: 0;
     left: 0;
-    height: 100px;
+    height: 110px;
     width: 97%;
     border-radius: 3%;
 
