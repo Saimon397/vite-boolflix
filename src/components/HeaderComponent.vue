@@ -16,8 +16,8 @@
         <img class="pic" :src="store.account" alt="account" v-show="store.display">
         <input class="form-control bg-dark me-3 border-dark w-50 text-white" type="search" placeholder="Search..."
           v-model="research" @keyup.enter="search" aria-label="Search">
-        <button class="btn text-white border-dark btn-dark btn-outline-secondary" type="submit"><img class="logo2"
-            src="/img/Netflix-Logo.wine.svg" alt="logo-ntx" @click="search"></button>
+        <button onclick="location.href='#nogo'" class="btn text-white border-dark btn-dark btn-outline-secondary"
+          type="submit"><img class="logo2" src="/img/Netflix-Logo.wine.svg" alt="logo-ntx" @click="search"></button>
       </form>
     </div>
   </nav>
