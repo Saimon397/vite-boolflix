@@ -1,5 +1,5 @@
 <template>
-    <div class="cardd px-3 position-relative col-4 mt-3" @mouseover="hover = true" @mouseleave="hover = false">
+    <div class="cardd px-3 position-relative col-4" @mouseover="hover = true" @mouseleave="hover = false">
         <div class=" card-container">
             <Transition name="transition2">
                 <div class="position-absolute info-hov" v-if="hover">
@@ -77,7 +77,7 @@ export default {
 
 .cardd {
     background-color: rgba(27, 27, 27, 0);
-    height: 100%;
+    height: 250px;
     transition: 0.4s ease-in-out;
 
 
@@ -98,6 +98,7 @@ export default {
         background-color: rgba(0, 0, 0, 0.434);
         height: 100%;
         width: 94%;
+        z-index: 3000;
     }
 
     .info-hov i {

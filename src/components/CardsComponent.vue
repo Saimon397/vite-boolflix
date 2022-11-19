@@ -2,7 +2,7 @@
   <Transition name="transitiontitle">
     <div v-show="list.length" class="TitleOne px-4">{{ CatTitle }}</div>
   </Transition>
-  <div class="container-fluid scroll d-flex align-items-center py-2">
+  <div class="container-fluid scroll d-flex align-items-center m-auto">
     <TransitionGroup name="transition">
       <CardComponent v-for="(item, index) in list" :key="index" :card="item" />
     </TransitionGroup>
@@ -76,11 +76,12 @@ export default {
   font-size: 50px;
   color: $coltext;
   text-shadow: 2px 2px black;
+  margin-top: 30px;
 }
 
 .scroll {
   margin-bottom: 50px;
-  height: 300px;
+  height: 350px;
   overflow: auto;
   overflow-y: hidden;
 }

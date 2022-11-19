@@ -13,7 +13,7 @@ export default {
 
 <style lang="scss" scoped>
 .video-bg {
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     width: 100%;
     height: 77vh;
     object-fit: cover;
