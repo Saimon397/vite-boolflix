@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar navbar-expand-lg bg-gradient text-uppercase">
+  <nav class="navbar navbar-expand-lg bg-gradient text-uppercase borderbdrop">
     <div class="container-fluid">
       <img class="logo" src="/img/BOOLFLIX.png" alt="logo-png">
       <div class="collapse navbar-collapse w-100" id="navbarNavAltMarkup">
@@ -46,7 +46,13 @@ export default {
 @use '../assets/partials/variables' as *;
 
 .nav {
-  z-index: 1000
+  z-index: 1000;
+}
+
+.borderbdrop {
+  z-index: 1000;
+  backdrop-filter: blur(10px);
+  border-bottom: 3px solid rgba(228, 19, 26, 1);
 }
 
 .logo {

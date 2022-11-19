@@ -2,7 +2,7 @@
   <header class="sticky-top">
     <HeaderComponent v-if="store.display" />
   </header>
-  <main class="mt-1">
+  <main>
     <AccountComponent v-if="!store.display" />
     <JumboComponent v-if="store.display" />
     <MainComponent v-if="store.display" />
